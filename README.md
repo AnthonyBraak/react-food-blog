@@ -36,7 +36,7 @@ A responsive recipe website built with **React**, **TypeScript**, and **SCSS**, 
 ```bash
 # Clone the repo
 git clone https://github.com/AnthonyBraak/react-food-blog.git
-cd cookingfood.com
+cd react-food-blog
 
 # Install dependencies
 npm install
