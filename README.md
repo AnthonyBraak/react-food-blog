@@ -10,11 +10,13 @@ A responsive recipe website built with **React**, **TypeScript**, and **SCSS**, 
 
 ## Feautures
 
-- Browse a variety of recipes with images and descriptions (to be added)
+- Browse a variety of recipes with images and descriptions
 - Custom SCSS animations for enhanced user experience
+- Custom Theme, Colors, Font Sizes and Animation Speeds for personalized user experience
 - Fully responsive layout for mobile, tablet, and desktop
 - Fast, lightweight frontend built with React and TypeScript
 - Modular and clean component-based architecture
+- Latest 10 search terms get remembered and displayed
 
 ---
 
@@ -35,8 +37,8 @@ A responsive recipe website built with **React**, **TypeScript**, and **SCSS**, 
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/cookingfood.com.git
-cd cookingfood.com
+git clone https://github.com/AnthonyBraak/react-food-blog.git
+cd react-food-blog
 
 # Install dependencies
 npm install
@@ -48,9 +50,8 @@ npm run dev
 
 ## Next Steps
 
-- add Recipe page with recipes
-- add Settings page to give customers individualized experiences
 - add About page
+- add Search Function for Recipe Page
 
 ---
 
