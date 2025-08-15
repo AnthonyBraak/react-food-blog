@@ -46,6 +46,7 @@ npm install
 # Run the Server
 npm run dev
 ```
+
 ---
 
 ## Next Steps
@@ -56,6 +57,7 @@ npm run dev
 ---
 
 ## Author
+
 Anthony Braak
 
 Feel free to connect on [LinkedIn](https://www.linkedin.com/in/anthony-braak-63b1b9371)
