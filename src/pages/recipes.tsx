@@ -37,7 +37,11 @@ export default function Recipes() {
   return (
     <div>
       <PreviousSearches onSearchResults={handleSearchResults} />
-      <RecipeContainer recipes={filteredRecipes} />
+      {filteredRecipes.length > 0 ? (
+        <RecipeContainer recipes={filteredRecipes} />
+      ) : (
+        <p className="no-recipe">No recipes found for this search.</p>
+      )}
     </div>
   );
 }
