@@ -9,8 +9,9 @@
   ],
   "scripts": {
     "dev": "concurrently \"npm run dev --prefix backend\" \"vite\"",
-    "build": "tsc -b && vite build",
+    "build": "npm run build --prefix backend && vite build",
     "lint": "eslint .",
+    "start": "concurrently \"npm run start --prefix backend\" \"vite preview\"",
     "preview": "vite preview"
   },
   "dependencies": {
