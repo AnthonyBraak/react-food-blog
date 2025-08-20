@@ -16,8 +16,14 @@ export default function Footer() {
       </div>
       <div className="footer-section">
         <p className="title">Socials</p>
-        <p>Github</p>
-        <p>LinkedIn</p>
+        <p>
+          <a href="https://github.com/AnthonyBraak">Github</a>
+        </p>
+        <p>
+          <a href="https://www.linkedin.com/in/anthony-braak-63b1b9371/">
+            LinkedIn
+          </a>
+        </p>
       </div>
     </div>
   );
