@@ -69,12 +69,6 @@ npm run dev
 
 ---
 
-## Next Steps
-
-- add About page
-
----
-
 ## Author
 
 Anthony Braak
