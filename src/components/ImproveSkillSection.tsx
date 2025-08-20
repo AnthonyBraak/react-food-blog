@@ -1,4 +1,11 @@
+import { useNavigate } from "react-router-dom";
+
 export default function ImproveSkills() {
+  const navigate = useNavigate();
+  function goToAbout() {
+    navigate("/about");
+  }
+
   const list = [
     "Learn new recepies",
     "Create your own recepies",
@@ -19,7 +26,9 @@ export default function ImproveSkills() {
             {item}
           </p>
         ))}
-        <button className="btn">Sign up!</button>
+        <button className="btn" onClick={goToAbout}>
+          Sign up!
+        </button>
       </div>
     </div>
   );

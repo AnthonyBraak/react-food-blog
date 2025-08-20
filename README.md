@@ -1,6 +1,6 @@
 # CookingFood.com
 
-A responsive recipe website built with **React**, **TypeScript**, and **SCSS**, designed to showcase a wide variety of dishes with smooth custom animations and clean UI components.
+A responsive recipe website built with **React**, **TypeScript**, and **SCSS**, designed to showcase a wide variety of dishes with smooth custom animations and clean UI components. Backend is handled with **Node.JS** and a **REST API**.
 
 ![screenshot-1](./screenshots/Screenshot1.png)
 ![screenshot-2](./screenshots/Screenshot2.png)
@@ -10,21 +10,41 @@ A responsive recipe website built with **React**, **TypeScript**, and **SCSS**, 
 
 ## Feautures
 
-- Browse a variety of recipes with images and descriptions
-- Custom SCSS animations for enhanced user experience
-- Custom Theme, Colors, Font Sizes and Animation Speeds for personalized user experience
-- Fully responsive layout for mobile, tablet, and desktop
-- Fast, lightweight frontend built with React and TypeScript
-- Modular and clean component-based architecture
-- Latest 10 search terms get remembered and displayed
+- Search Functionality: Search recipes by keywords in the title or description
+
+- Search History: Automatically remembers and displays your 5 most recent searches
+
+- Recipe Browser: Browse a variety of recipes with images, authors, and descriptions
+
+- Custom Theming: Easily adjust theme colors, font sizes, and animation speeds
+
+- Responsive Design: Fully responsive layout optimized for mobile, tablet, and desktop
+
+- Fast Frontend: Lightweight and performant frontend built with React and TypeScript
+
+- Modular Codebase: Clean, maintainable, and scalable component-based architecture
+
+- Smooth Animations: Custom SCSS-based transitions for a polished user experience
+
+- REST API Integration: Recipes are dynamically loaded from a Node.js backend using Express
 
 ---
 
 ## Tech Stack
 
-- **Frontend:** React 18, TypeScript
-- **Styling:** SCSS
-- **Tooling:** Vite
+- **Frontend**: React 18, TypeScript
+
+- **Styling**: SCSS (Sass)
+
+- **Build Tool**: Vite
+
+- **Backend**: Node.js, Express
+
+- **API Communication**: REST API (JSON)
+
+- **Code Quality**: ESLint, Prettier
+
+- **Version Control**: Git, GitHub
 
 ## Getting Started
 
@@ -40,10 +60,10 @@ A responsive recipe website built with **React**, **TypeScript**, and **SCSS**, 
 git clone https://github.com/AnthonyBraak/react-food-blog.git
 cd react-food-blog
 
-# Install dependencies
+# Install dependencies for both frontend and backend
 npm install
 
-# Run the Server
+# Run both frontend and backend servers concurrently
 npm run dev
 ```
 
@@ -52,7 +72,6 @@ npm run dev
 ## Next Steps
 
 - add About page
-- add Search Function for Recipe Page
 
 ---
 

@@ -3,7 +3,11 @@ import { FaSearch } from "react-icons/fa";
 
 const LOCAL_STORAGE_KEY = "previousSearches";
 
-export default function PreviousSearches() {
+type SearchProps = {
+  onSearchResults: (searchTerm: string) => void;
+};
+
+export default function PreviousSearches({ onSearchResults }: SearchProps) {
   const [searchInput, setSearchInput] = useState("");
   const [searches, setSearches] = useState<{ id: string; value: string }[]>([]);
 
@@ -23,12 +27,21 @@ export default function PreviousSearches() {
 
   const handleSearch = () => {
     if (!searchInput.trim()) return;
+    // Save the search term
     const newItem = { id: Date.now().toString(), value: searchInput };
-    const updated = [newItem, ...searches].slice(0, 10);
+    const updated = [newItem, ...searches].slice(0, 5);
     setSearches(updated);
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(updated));
+
+    // Notify parent to filter recipes based on searchInput
+    onSearchResults(searchInput);
+
     setSearchInput("");
   };
+  const handleOldSearch = (value: string) => {
+    onSearchResults(value);
+  };
+
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       handleSearch();
@@ -39,13 +52,14 @@ export default function PreviousSearches() {
       <h2>Previous Searches</h2>
       <div className="previous-searches-container">
         {searches.map((search, index) => (
-          <div
+          <button
             key={search.id}
             style={{ animationDelay: index * 0.1 + "s" }}
             className="search-item"
+            onClick={() => handleOldSearch(search.value)}
           >
             {search.value}
-          </div>
+          </button>
         ))}
       </div>
       <div className="search-box">
