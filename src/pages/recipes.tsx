@@ -13,9 +13,9 @@ export default function Recipes() {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
   const [filteredRecipes, setFilteredRecipes] = useState<Recipe[]>([]);
 
-  // Fetch all recipes on mount
+  // Fetch all recipes on mount, when testing locally, use "http://localhost:4000/api/recipes"
   useEffect(() => {
-    fetch("http://localhost:4000/api/recipes")
+    fetch("/api/recipes")
       .then((res) => res.json())
       .then((data) => {
         setRecipes(data);
