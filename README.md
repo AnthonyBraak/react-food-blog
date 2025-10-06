@@ -1,6 +1,6 @@
 # CookingFood.com
 
-A responsive recipe website built with **React**, **TypeScript**, and **SCSS**, designed to showcase a wide variety of dishes with smooth custom animations and clean UI components. Backend is handled with **Node.JS** and a **REST API**.
+A responsive recipe website built with **React**, **TypeScript**, and **SCSS**, designed to showcase a wide variety of dishes with smooth custom animations and clean UI components. Backend is handled with **Node.JS** and a **REST API**. Demo now deployed on [**Netlify**](https://react-food-blog.netlify.app/)!
 
 ![screenshot-1](./screenshots/Screenshot1.png)
 ![screenshot-2](./screenshots/Screenshot2.png)
